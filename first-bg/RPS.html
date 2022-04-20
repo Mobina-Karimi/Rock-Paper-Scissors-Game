@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RPS.css">
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="score">
+            <input type="button" value="Restart" class="restart">
+            <div class="moveLeft">Moves Left: <span>10</span></div>
+            <div class="highScore">highScore: </div>
+        </div>
+        <div class="section" style="display: flex; justify-content: space-around;margin: 2.5rem 0;">
+            <div id="You">
+                <div class="YourScore">You : <span id="YourScore">0</span></div>
+                <div class="You show">
+                    <i class="fas fa-hand-rock"></i>
+                </div>
+            </div>
+            <div id="Computer">
+                <div class="ComputerScore">Computer : <span id="ComputerScore">0</span></div>
+                <div class="Computer show">
+                    <i class="fas fa-hand-scissors"></i>
+                </div>
+            </div>
+        </div>
+        <p class="message">Choose One:</p>
+        <div class="selection">
+            <a href="#"><button class="fas fa-hand-rock" id="rock"></button></a>
+            <a href="#"><button class="fas fa-hand-paper" id="paper"></button></a>
+            <a href="#"><button class="fas fa-hand-scissors" id="scissors"></button></a>
+        </div>
+    </div>
+</body>
+<script src="../RPS.js"></script>
+
+</html>
