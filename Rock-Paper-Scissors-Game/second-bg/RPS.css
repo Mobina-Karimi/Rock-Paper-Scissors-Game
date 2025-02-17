@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/Sbg.jpg');
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 35rem;
+}
+
+.score {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.moveLeft,
+.highScore {
+    padding: 1.5rem 0;
+}
+
+.restart {
+    background: #030b7800;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#You,
+#Computer {
+    display: inline;
+    background-color: #55c9d164;
+    width: 19rem;
+    border-radius: 5px;
+}
+
+.You,
+.Computer {
+    font-size: 100px;
+    color: orange;
+    margin: 2rem;
+}
+
+.YourScore,
+.ComputerScore {
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 1rem;
+    color: #fff;
+}
+
+.selection button {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #55c9d1b5;
+    font-size: 45px;
+    color: #ffa500;
+}
+
+.selection button:active {
+    box-shadow: 3px 3px 5px #2d2d2d;
+}
+
+p {
+    font-size: 25px;
+    margin-top: 6rem;
+    color: #fff;
+}
+
+@media (max-width: 740px) {
+    #You,
+    #Computer {
+        width: 15rem;
+    }
+}
